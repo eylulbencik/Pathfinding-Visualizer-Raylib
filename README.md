@@ -40,17 +40,20 @@ To demonstrate the efficiency gap, I designed a "Mud Challenge" where a high-cos
 ### 1. Test Scenario
 Users can interactively place walls and high-cost mud tiles (Cost: 5) on the grid.
 
-<img width="912" height="880" alt="TheMudChallenge" src="https://github.com/user-attachments/assets/82db318a-7857-4650-8789-46d48aef08a9" />
+<img width="912" height="880" alt="TheMudChallenge" src="https://github.com/user-attachments/assets/245b7736-a717-48ab-983e-fbc8234a30c6" />
+
 
 ### 2. Comparison Results
 Dijkstra's Algorithm (Orange) detours to find the cheapest path, whereas BFS (Yellow) blindly crosses the mud, resulting in a significantly higher "True Cost".
 
-<img width="912" height="880" alt="TheMudChallengeResult" src="https://github.com/user-attachments/assets/8b97ed75-1aaf-4d64-925d-cba6b7f9b7a6" />
+<img width="912" height="880" alt="TheMudChallengeResult" src="https://github.com/user-attachments/assets/fd572d2f-07c4-458d-9ad8-febe1f78869d" />
+
 
 ## Weighted Terrain Efficiency Test
 This real-time demonstration captures the core purpose of the project: observing how different search strategies handle environmental costs.
 
-![WeightedTerrainEfficiencyTest](https://github.com/user-attachments/assets/d5b96671-f4a6-41a8-86b5-df888d46665e)
+![WeightedTerrainEfficiencyTest](https://github.com/user-attachments/assets/baa3c5e9-b91f-4bef-b547-4729bc141961)
+
 
 Proof: The performance dashboard highlights the "True Cost" discrepancy. While BFS appears faster in terms of execution, it results in a much higher path cost (54 vs 40), proving that "shortest" isn't always "cheapest" in complex systems.
 
