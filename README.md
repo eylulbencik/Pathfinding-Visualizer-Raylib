@@ -69,13 +69,13 @@ brew install raylib
 
 ### 2. Compile and Run the Visualizer
 
-*(Ensure you are in the PathfindingVisualizer directory)*
+*(Ensure you are in the Pathfinding-Visualizer-Raylib directory)*
 
 ```bash
-g++ -std=c++11 PathfindingVisualizer.cpp -o visualizer \
+g++ -std=c++11 Pathfinding-Visualizer-Raylib.cpp -o visualizer \
 -I/opt/homebrew/include -L/opt/homebrew/lib -lraylib \
 -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL \
 && ./visualizer
 ```
 
-> **Note:** Ensure you are in the `PathfindingVisualizer` directory before executing the compilation command.
+> **Note:** Ensure you are in the `Pathfinding-Visualizer-Raylib` directory before executing the compilation command.
