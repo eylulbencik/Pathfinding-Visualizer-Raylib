@@ -57,25 +57,23 @@ This real-time demonstration captures the core purpose of the project: observing
 
 Proof: The performance dashboard highlights the "True Cost" discrepancy. While BFS appears faster in terms of execution, it results in a much higher path cost (54 vs 40), proving that "shortest" isn't always "cheapest" in complex systems.
 
-## 🚀 How to Run (macOS)
+## 🛠 Build & Run (Cross-Platform)
+This project is built with **CMake**, allowing it to run seamlessly on Windows, macOS, and Linux.
 
-You can utilize the following build command to link the Raylib library and framework dependencies on macOS:
+### Prerequisites
+- **CMake** (v3.10+)
+- **Raylib** library
 
-### 1. Install Raylib via Homebrew
-
+### Quick Start
 ```bash
-brew install raylib
-```
+# Clone the repository
+git clone [https://github.com/eylubencik/Pathfinding-Visualizer-Raylib.git](https://github.com/eylubencik/Pathfinding-Visualizer-Raylib.git)
+cd Pathfinding-Visualizer-Raylib
 
-### 2. Compile and Run the Visualizer
+# Build the project
+mkdir build && cd build
+cmake ..
+cmake --build .
 
-*(Ensure you are in the Pathfinding-Visualizer-Raylib directory)*
-
-```bash
-g++ -std=c++11 Pathfinding-Visualizer-Raylib.cpp -o visualizer \
--I/opt/homebrew/include -L/opt/homebrew/lib -lraylib \
--framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL \
-&& ./visualizer
-```
-
-> **Note:** Ensure you are in the `Pathfinding-Visualizer-Raylib` directory before executing the compilation command.
+# Run the visualizer
+./PathfindingVisualizer
