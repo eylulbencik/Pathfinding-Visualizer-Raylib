@@ -27,12 +27,6 @@ Developing this tool has significantly enhanced my ability to think algorithmica
 | **Terrain** | Avoids high-cost mud | Ignores mud costs |
 | **Use Case** | Realistic navigation | Simple maze solving |
 
-## Tech Stack & Build
-
-* **Language:** C++11
-* **Library:** Raylib
-* **Platform:** Optimized for macOS
-
 ## Performance Analysis: The Mud Challange
 
 To demonstrate the efficiency gap, I designed a "Mud Challenge" where a high-cost terrain blocks the direct path to the goal.
@@ -64,16 +58,27 @@ This project is built with **CMake**, allowing it to run seamlessly on Windows, 
 - **CMake** (v3.10+)
 - **Raylib** library
 
-### Quick Start
+### Installation & Compilation
+Copy and paste these commands into your terminal:
+
 ```bash
-# Clone the repository
-git clone [https://github.com/eylubencik/Pathfinding-Visualizer-Raylib.git](https://github.com/eylubencik/Pathfinding-Visualizer-Raylib.git)
+# 1. Step Zero: Navigate to your desired directory (e.g., Desktop)
+cd ~/Desktop
+
+# 2. Clone the repository
+git clone https://github.com/eylulbencik/Pathfinding-Visualizer-Raylib.git
+
+# 3. Enter the project directory
 cd Pathfinding-Visualizer-Raylib
 
-# Build the project
+# 4. Create a build directory and enter it
 mkdir build && cd build
+
+# 5. Configure the project with CMake
 cmake ..
+
+# 6. Build the project
 cmake --build .
 
-# Run the visualizer
+# 7. Run the visualizer
 ./PathfindingVisualizer
